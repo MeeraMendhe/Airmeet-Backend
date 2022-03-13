@@ -3,9 +3,13 @@ const MovieModel = require("../Models/Movie.model")
 const router=express.Router()
 
 router.get("/",async(req,res)=>{
+    console.log(req.query)
+    const page=+req.query._page||1;
+    const limit=+req.query._limit||6;
+    const offset=(page-1)*limit
     try{
        
-        const movies=await MovieModel.find().lean().exec()
+        const movies=await MovieModel.find().skip(offset).limit(limit).lean().exec()
         return res.status(200).send(movies)
 
     }catch(e){
