@@ -21,9 +21,12 @@ router.get("/filter/:type",async(req,res)=>{
   
     let filter=req.params.type
     console.log(filter)
+    const page=+req.query._page||1;
+    const limit=+req.query._limit||9;
+    const offset=(page-1)*limit
     try{
        
-        const movies=await MovieModel.find({type:{$eq:filter}}).lean().exec()
+        const movies=await MovieModel.find({type:{$eq:filter}}).skip(offset).limit(limit).lean().exec()
         return res.status(200).send(movies)
 
     }catch(e){
