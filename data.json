@@ -462,66 +462,6 @@
         "imdbId": "tt0780521"
       },
       {
-        "id": 1,
-        "title": "The Wizard of Oz",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BNjUyMTc4MDExMV5BMl5BanBnXkFtZTgwNDg0NDIwMjE@._V1_SX300.jpg",
-        "imdbId": "tt0032138"
-      },
-      {
-        "id": 2,
-        "title": "Citizen Kane",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BYjBiOTYxZWItMzdiZi00NjlkLWIzZTYtYmFhZjhiMTljOTdkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
-        "imdbId": "tt0033467"
-      },
-      {
-        "id": 3,
-        "title": "The Third Man",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BYjE2OTdhMWUtOGJlMy00ZDViLWIzZjgtYjZkZGZmMDZjYmEyXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
-        "imdbId": "tt0041959"
-      },
-      {
-        "id": 4,
-        "title": "It Happened One Night",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BZmViYmM5OTYtNGQ4Ny00YjQyLThiNjEtYTE4MGZhZTNmZjcyL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-        "imdbId": "tt0025316"
-      },
-      {
-        "id": 5,
-        "title": "Casablanca",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BY2IzZGY2YmEtYzljNS00NTM5LTgwMzUtMzM1NjQ4NGI0OTk0XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-        "imdbId": "tt0034583"
-      },
-      {
-        "id": 6,
-        "title": "All About Eve",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BMTY2MTAzODI5NV5BMl5BanBnXkFtZTgwMjM4NzQ0MjE@._V1_SX300.jpg",
-        "imdbId": "tt0042192"
-      },
-      {
-        "id": 7,
-        "title": "Metropolis",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BMTg5YWIyMWUtZDY5My00Zjc1LTljOTctYmI0MWRmY2M2NmRkXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
-        "imdbId": "tt0017136"
-      },
-      {
-        "id": 8,
-        "title": "Modern Times",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BYjJiZjMzYzktNjU0NS00OTkxLWEwYzItYzdhYWJjN2QzMTRlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-        "imdbId": "tt0027977"
-      },
-      {
-        "id": 9,
-        "title": "King Kong",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BZTY3YjYxZGQtMTM2YS00ZmYwLWFlM2QtOWFlMTU1NTAyZDQ2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_SX300.jpg",
-        "imdbId": "tt0024216"
-      },
-      {
-        "id": 10,
-        "title": "Singin' in the Rain",
-        "posterURL": "https://m.media-amazon.com/images/M/MV5BMWUyNjQ5MTAtNDJhYS00MWQ0LTk2ZTAtZmE4MWNlMjMwMzg3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
-        "imdbId": "tt0045152"
-      },
-      {
         "type":"classic",
         "title": "Psycho",
         "posterURL": "https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
@@ -977,19 +917,19 @@
         "imdbId": "tt7349662"
       },
       {
-    "type":"comedy",
+       "type":"comedy",
         "title": "It Happened One Night",
         "posterURL": "https://m.media-amazon.com/images/M/MV5BZmViYmM5OTYtNGQ4Ny00YjQyLThiNjEtYTE4MGZhZTNmZjcyL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
         "imdbId": "tt0025316"
       },
       {
-    "type":"comedy",
+        "type":"comedy",
         "title": "Eighth Grade",
         "posterURL": "https://m.media-amazon.com/images/M/MV5BMzVlYzgxYjAtYzhhZi00MDc1LTlkZDMtMTRhZWI0MTg5YTRjXkEyXkFqcGdeQXVyNTAzMTY4MDA@._V1_SX300.jpg",
         "imdbId": "tt7014006"
       },
       {
-    "type":"comedy",
+        "type":"comedy",
         "title": "Coco",
         "posterURL": "https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_SX300.jpg",
         "imdbId": "tt2380307"

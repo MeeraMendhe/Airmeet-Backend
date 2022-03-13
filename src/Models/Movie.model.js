@@ -3,15 +3,19 @@ const mongoose=require("mongoose")
 const MovieSchema=mongoose.Schema({
     title: {
         type: String,
-        require:true
+        required:true
     },
     posterURL: {
         type: String,
-        require:true
+        required:false
     },
     imdbId:  {
         type: String,
-        require:true
+        required:true
+    },
+    type:{ 
+        type: String,
+        required:false
     }
 },
 {

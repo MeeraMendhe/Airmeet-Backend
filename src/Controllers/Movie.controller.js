@@ -17,5 +17,19 @@ router.get("/",async(req,res)=>{
         return res.status(400).send("Bad Request",e)
     }
 })
+router.get("/filter/:type",async(req,res)=>{
+  
+    let filter=req.params.type
+    console.log(filter)
+    try{
+       
+        const movies=await MovieModel.find({type:{$eq:filter}}).lean().exec()
+        return res.status(200).send(movies)
+
+    }catch(e){
+        
+        return res.status(400).send("Bad Request",e)
+    }
+})
 
 module.exports=router
