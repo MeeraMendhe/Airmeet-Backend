@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 
 const connect=()=>
 {
-   return mongoose.connect("mongodb://127.0.0.1:27017/movie")
+   return mongoose.connect("mongodb+srv://MeeraMendhe:kingangel@cluster0.4maw9.mongodb.net/movie")
 }
 
 module.exports=connect
