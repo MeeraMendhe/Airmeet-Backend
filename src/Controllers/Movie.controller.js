@@ -17,10 +17,21 @@ router.get("/",async(req,res)=>{
         return res.status(400).send("Bad Request",e)
     }
 })
+router.patch("/",async(req,res)=>{
+    try{
+       
+        const movies=await MovieModel.update({$set:{"flag":false}})
+        return res.status(200).send(movies)
+
+    }catch(e){
+        
+        return res.status(400).send("Bad Request",e)
+    }
+})
 router.get("/filter/:type",async(req,res)=>{
   
     let filter=req.params.type
-    console.log(filter)
+    //console.log(filter)
     const page=+req.query._page||1;
     const limit=+req.query._limit||9;
     const offset=(page-1)*limit

@@ -16,6 +16,10 @@ const MovieSchema=mongoose.Schema({
     type:{ 
         type: String,
         required:false
+    },
+    flag:{
+        type: Boolean,
+        default: false
     }
 },
 {
