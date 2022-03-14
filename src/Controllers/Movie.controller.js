@@ -31,7 +31,6 @@ router.patch("/",async(req,res)=>{
 router.patch("/:id",async(req,res)=>{
     let data=await MovieModel.findById(req.params.id)
     let flag=data.flag  
-    console.log(flag)
     if(flag==true)
     {
         try{
