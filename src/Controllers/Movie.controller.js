@@ -28,6 +28,34 @@ router.patch("/",async(req,res)=>{
         return res.status(400).send("Bad Request",e)
     }
 })
+router.patch("/:id",async(req,res)=>{
+    let data=await MovieModel.findById(req.params.id)
+    let flag=data.flag  
+    console.log(flag)
+    if(flag==true)
+    {
+        try{
+            const movies=await MovieModel.findByIdAndUpdate(req.params.id,{$set:{flag:false}},{new:true})
+            return res.status(200).send(movies)
+    
+        }catch(e){
+            
+            return res.status(400).send("Bad Request",e)
+        }
+    }
+    else
+    {
+        try{
+            const movies=await MovieModel.findByIdAndUpdate(req.params.id,{$set:{flag:true}},{new:true})
+            return res.status(200).send(movies)
+    
+        }catch(e){
+            
+            return res.status(400).send("Bad Request",e)
+        }
+    }
+   
+})
 router.get("/filter/:type",async(req,res)=>{
   
     let filter=req.params.type
