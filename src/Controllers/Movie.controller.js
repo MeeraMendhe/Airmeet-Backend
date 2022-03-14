@@ -55,6 +55,34 @@ router.patch("/:id",async(req,res)=>{
     }
    
 })
+router.get("/:name",async(req,res)=>{
+    let getName=req.params.name
+    let num=true
+    try{
+       
+        const movies=await MovieModel.find().lean().exec()
+       let newMovie= movies.filter(e=>{
+           num=true
+           for(let i=0;i<getName.length;i++)
+           {
+              if(e.title[i]!=getName[i])
+              {
+                num=false;
+                break
+              }
+              console.log(e.title[i],getName[i])
+           
+           }
+           return num?true:false
+       })
+          console.log(newMovie)
+        return res.status(200).send(newMovie)
+
+    }catch(e){
+        
+        return res.status(400).send("Bad Request",e)
+    }
+})
 router.get("/filter/:type",async(req,res)=>{
   
     let filter=req.params.type
